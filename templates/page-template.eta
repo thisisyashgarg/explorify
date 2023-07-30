@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explorify</title>
+    <link rel="stylesheet" href="output.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+  </head>
+  <body>
+    <nav class="flex justify-between m-4">
+      <p><%= it.key %></p>
+      <p class="text-gray-400">PRICE</p>
+    </nav>
+    <main class="flex justify-between m-4">
+      <h1 class="text-5xl font-bold"><%= it.activity %></h1>
+      <p><%= it.price %></p>
+    </main>
+
+    <div class="md:flex md:justify-between">
+      <div>
+        <h3 class="mt-4 text-l mx-4 font-semibold">
+          OUTDOOR AND SPORTING GOODS COMPANY
+        </h3>
+
+        <button class="border bg-red px-8 py-4 m-4 bg-[#D93A31] text-white">
+          EXPLORE MORE ⟶
+        </button>
+
+        <p class="px-4 hidden md:block font-light">
+          We have more special goods for you 🚀
+        </p>
+
+        <section class="flex gap-6 m-4 my-10">
+          <div class="space-y-4">
+            <h3>MORE THAN</h3>
+            <h1 class="text-5xl font-bold">50+</h1>
+            <h3 class="font-semibold">ADVENTURE PRODUCT</h3>
+          </div>
+          <div class="space-y-4">
+            <h3>MORE THAN</h3>
+            <h1 class="text-5xl font-bold">50+</h1>
+            <h3 class="font-semibold">OUTLET IN INDONESIA</h3>
+          </div>
+        </section>
+      </div>
+
+      <div class="relative">
+        <img
+          class="min-w-[84px]"
+          src="../public/Screenshot 2023-07-30 at 8.40.24 PM.png"
+          alt="boy"
+        />
+
+        <img
+          src="../public/LogoGroup.svg"
+          alt="boy"
+          class="absolute top-0 left-1/2 w-24 h-full"
+        />
+      </div>
+    </div>
+
+    <footer class="flex bg-[#2B2B35] text-white p-6 md:gap-16 md:justify-start justify-around">
+      <div class="flex gap-2">
+        <svg
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.5 14.875H25.375"
+            stroke="white"
+            stroke-width="3"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.5 28.875H14"
+            stroke="white"
+            stroke-width="3"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18.375 28.875H25.375"
+            stroke="white"
+            stroke-width="3"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M38.5 24.5525V28.1925C38.5 34.335 36.9425 35.875 30.73 35.875H11.27C5.0575 35.875 3.5 34.335 3.5 28.1925V13.8075C3.5 7.665 5.0575 6.125 11.27 6.125H25.375"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M35 16.625V6.125L38.5 9.625"
+            stroke="#D93A31"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M35 6.125L31.5 9.625"
+            stroke="#D93A31"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <h4 class="text-gray-400">Accessibility</h4>
+          <h4 class="font-semibold"><%= it.accessibility %></h4>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <svg
+          width="42"
+          height="44"
+          viewBox="0 0 42 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.3577 4.01723L9.62515 7.404C7.61265 8.17863 5.96765 10.6286 5.96765 12.8264V26.2113C5.96765 28.3371 7.33265 31.1294 8.99515 32.4084L16.5202 38.1911C18.9877 40.1007 23.0477 40.1007 25.5152 38.1911L33.0402 32.4084C34.7027 31.1294 36.0677 28.3371 36.0677 26.2113V12.8264C36.0677 10.6106 34.4227 8.16061 32.4102 7.38598L23.6777 4.01723C22.1902 3.45877 19.8102 3.45877 18.3577 4.01723Z"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.8373 21.3836L18.6548 24.2839L26.1798 16.5376"
+            stroke="#D93A31"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <h4 class="text-gray-400">Type</h4>
+          <h4 class="font-semibold capitalize"><%= it.type %></h4>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
